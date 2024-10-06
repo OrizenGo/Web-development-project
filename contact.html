@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script type="text/javascript">
+<!--     
+function validateblank()
+{
+
+   if( document.myForm.firstname.value == "" )
+   {
+     alert( "Please provide your first name!" );
+     document.myForm.firstname.focus() ;
+     return false;
+   }
+  
+  if( document.myForm.lastname.value == "" )
+   {
+     alert( "Please provide your last name!" );
+     document.myForm.lastname.focus() ;
+     return false;
+   }
+   if( document.myForm.email.value == "" )
+   {
+     alert( "Please provide your email address!" );
+     document.myForm.email.focus() ;
+     return false;
+   }
+
+   if( document.myForm.subject.value == "" )
+   {
+     alert( "Please fill in the subject!" );
+     document.myForm.subject.focus() ;
+     return false;
+   }
+   return( true );
+}
+</script>
+<script type="text/javascript">
+<!--
+function validateEmail()
+{
+
+   var emailID = document.myForm.email.value;
+   atpos = emailID.indexOf("@");
+   dotpos = emailID.lastIndexOf(".");
+   if (atpos < 1 || ( dotpos - atpos < 2 )) 
+   {
+       alert("Please enter correct email address! Example: name@mail.com")
+       document.myForm.email.focus() ;
+       return false;
+   }
+   return( true );
+}
+//-->
+   function validateForm(){
+  return validateblank() && validateEmail();
+   alert( "Thank you for submitting the contact form." );
+
+}
+</script>
+
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+  .header {
+  text-align: center; /* center the text */
+  background: #ddd; /* gray background */
+  color: white; /* white text color */
+}
+
+/* Increase the font size of the <h1> element */
+.header h1 {
+  font-size: 40px;
+}
+  /* Style the top navigation bar */
+.navbar {
+  overflow: hidden; /* Hide overflow */
+  background-color: #333; /* Dark background color */
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left; /* Make sure that the links stay side-by-side */
+  display: block; /* Change the display to block, for responsive reasons (see below) */
+  color: white; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 14px 20px; /* Add some padding */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right; /* Float a link to the right */
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+  background-color: #ddd; /* Grey background color */
+  color: black; /* Black text color */
+}
+  /* Ensure proper sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%; /* Set the width of the sidebar */
+  background-color: #f1f1f1; /* Grey background color */
+  padding: 20px; /* Some padding */
+}
+
+/* Main column */
+.main {
+  flex: 70%; /* Set the width of the main content */
+  background-color: white; /* White background color */
+  padding: 20px; /* Some padding */
+
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+  .footer {
+  padding: 20px; /* Some padding */
+  text-align: center; /* Center text*/
+  background: #ddd; /* Grey background */
+}
+  * {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+    /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+  /* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+<img src="OdamLogo3.jpg" style="width:100%">
+</div>
+  <div class="navbar">
+  <a href="index.html">HOME</a>
+  <a href="about.html">ABOUT</a>
+  <a href="contact.html">CONTACT</a>
+</div>
+  
+<div class="row">
+  <div class="side">
+    <h2>Contact Information</h2>
+<p>-----------------------------</p>
+
+<p><h4>Kennesaw Campus</p>
+<p>1000 Chastain Road</p>
+<p>Kennesaw, GA 30144</p>
+<p>-----------------------------</p>
+ 
+<p>Marietta Campus</p>
+<p>1100 South Marietta Pkwy</p>
+<p>Marietta, GA 30060</p>
+<p>-----------------------------</p>
+  
+<p>Phone</p>
+<p>470-KSU-INFO</p>
+<p>(470-578-4636)</p>
+<p></p>
+<a href="https://www.kennesaw.edu/">kennesaw.edu/info</a>
+  </h4>
+  </div>
+  
+  <div class="main"><center><img src = "Contactme.jpg" height = 50% width = 50%></center>
+    <p>Want to give suggestions or just say "hi"? Fill out the form below to contact me.</p>
+<div class="container">
+  
+  <form name="myForm" action="" onsubmit="return(validateForm());">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+ 
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="Email">Email Address</label>
+    <input type="text" id="email" name="email" placeholder="Your Email..">
+  
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  
+    <input type="submit" value="Submit">
+
+  </form>
+
+</div>
+</div>
+</div>
+<div class="footer">
+  <h4>Notes: The purpose of this website is for the sole purpose of a school project only. Resources/references on how to create the materials
+  within this website are from wikipages, w3schools.com, class materials and various youtube videos. This website is copywrited OdamTong@2024. 
+  If you have any questions, please use the contact page to send me any suggestions.</h4>
+</div>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+  .header {
+  text-align: center; /* center the text */
+  background: #ddd; /* gray background */
+  color: white; /* white text color */
+}
+
+/* Increase the font size of the <h1> element */
+.header h1 {
+  font-size: 40px;
+}
+  /* Style the top navigation bar */
+.navbar {
+  overflow: hidden; /* Hide overflow */
+  background-color: #333; /* Dark background color */
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left; /* Make sure that the links stay side-by-side */
+  display: block; /* Change the display to block, for responsive reasons (see below) */
+  color: white; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 14px 20px; /* Add some padding */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right; /* Float a link to the right */
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+  background-color: #ddd; /* Grey background color */
+  color: black; /* Black text color */
+}
+  /* Ensure proper sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%; /* Set the width of the sidebar */
+  background-color: #f1f1f1; /* Grey background color */
+  padding: 20px; /* Some padding */
+}
+
+/* Main column */
+.main {
+  flex: 70%; /* Set the width of the main content */
+  background-color: white; /* White background color */
+  padding: 20px; /* Some padding */
+
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+  .footer {
+  padding: 20px; /* Some padding */
+  text-align: center; /* Center text*/
+  background: #ddd; /* Grey background */
+}
+  * {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+  .column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+<img src="OdamLogo3.jpg" style="width:100%">
+</div>
+  <div class="navbar">
+  <a href="index.html">HOME</a>
+  <a href="about.html">ABOUT</a>
+  <a href="contact.html">CONTACT</a>
+</div>
+  <div class="row">
+    
+  <div class="side">
+    <img src="OdamTong.JPG" style="width:100%">
+    <p>Favorite Quote: "Be a Man for Others" - Fr. Pedro Arrupe</p> </div>
+
+  <div class="main">
+    <div class="about-section">
+  <h1>Biography: Odam Tong</h1>
+</div>
+
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Background</h2>
+        <p>“I am based out of Metro Atlanta, GA. and I will be completing my bachelor’s degree
+          in Information Security from Kennesaw State University. I'm married to my wife, Samantha, and we have 2 wondering kids. 
+          Orginally, my background was in Biology, but I switched careers mid way about 16 years ago. 
+          I realized that I've made the right decision to do so as there is a real shortage of Information Security workers..</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Experiences</h2>
+        <p>I've been in the IT Industry over 30 years, out of which, 16 of those are within the InfoSec field. 
+          Some of the key areas of expertise are in the management 
+          and architecture of security of network systems, risk & compliance management,
+          vendor management, and project management on a global scale. 
+          Additionally, I also have experience with 
+          security controls auditing and implementations, IT security products and services. 
+          I'm currently a Director of Enterprise Architecture for a paper manufacturing company. 
+</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Goals</h2>
+        <p>I have two goals in life. The first goal is the be happy and healthy. This is more of a personal goal as I strive to eat better,
+        excercise, get good sleep and spend a lot of time with my family.My second goal is more of a professional one. Professioally,
+        I'd like to open up my own consulting firm and travek the World! I'm interested in helping companies to 
+        identify and migitating security risks inorder to save time and money. </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h4>Notes: The purpose of this website is for the sole purpose of a school project only. Resources/references on how to create the materials
+  within this website are from wikipages, w3schools.com, class materials and various youtube videos. This website is copywrited OdamTong@2024. 
+  If you have any questions, please use the contact page to send me any suggestions.</h4>
+</div>
+</body>
+</html>

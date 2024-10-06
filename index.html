@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+}
+  .header {
+  text-align: center; /* center the text */
+  background: #ddd; /* gray background */
+  color: white; /* white text color */
+}
+
+/* Increase the font size of the <h1> element */
+.header h1 {
+  font-size: 40px;
+}
+  /* Style the top navigation bar */
+.navbar {
+  overflow: hidden; /* Hide overflow */
+  background-color: #333; /* Dark background color */
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left; /* Make sure that the links stay side-by-side */
+  display: block; /* Change the display to block, for responsive reasons (see below) */
+  color: white; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 14px 20px; /* Add some padding */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right; /* Float a link to the right */
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+  background-color: #ddd; /* Grey background color */
+  color: black; /* Black text color */
+}
+  /* Ensure proper sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%; /* Set the width of the sidebar */
+  background-color: #f1f1f1; /* Grey background color */
+  padding: 20px; /* Some padding */
+}
+
+/* Main column */
+.main {
+  flex: 70%; /* Set the width of the main content */
+  background-color: white; /* White background color */
+  padding: 20px; /* Some padding */
+
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+  .footer {
+  padding: 20px; /* Some padding */
+  text-align: center; /* Center text*/
+  background: #ddd; /* Grey background */
+}
+  * {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+  /* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px;
+}
+
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+</style>
+</head>
+<body>
+
+<div class="header">
+<img src="OdamLogo3.jpg" style="width:100%">
+</div>
+  <div class="navbar">
+  <a href="index.html">HOME</a>
+  <a href="about.html">ABOUT</a>
+  <a href="contact.html">CONTACT</a>
+</div>
+  <div class="row">
+    
+  <div class="side"><h2>Welcome to my homepage!</h2>
+    <p>Thank you for taking the time to check out my site.</p>
+    <p>My name is Odam Tong and I'm a student at KSU majoring in Information/Cyber Security. </p>
+           <img src="ITSec.jpeg">
+    <p></p>Feel free to browse around. You can provide me feedback by cliking on the "Contacts" page and fill out the form.</p> 
+  </div>
+
+  <div class="main">
+<center></center><h1>What is going on in Odam's World? </h1></center>
+
+<div class="row">
+  <div class="column left" style="background-color:#aaa;">
+  <img src="KSU.png" height = 100% width = 100%>
+  </div>
+  <div class="column right" style="background-color:#bbb;">
+    <h2>My life at Kennesaw State University .... Not what you think.</h2>
+    <p>That's right. I'm not your average KSU student. As being a proud growing member of adults choosing to go back to school, 
+      I'm proud to have the opportunity toe attend KSU. It is said that over 35% of college students are over 25 years old. Out of that 
+      27% of those folks are having to work full time while going to college full time. I belong to that category. Even with all of the years 
+      working in corporate and being able to carry all of those life exeriences with me, it's still a struggle to do school work. The older you get, 
+      the more responsbilities there are and the harder it is to obtain your dreams and aspirations.  If I had to give one advice to my fellow KSU
+      classmates, that would be to do it while you're young. You will save time, money, and energy. </p>
+    <p>If you're in my boat and want more information on KSU as an adult resturning back to college, check out: 
+      <a href="https://www.kennesaw.edu/adult-learner/index.php">Adult Learners @ KSU.</a></p>
+      </p>
+  </div>
+</div>
+    <p></p>
+  <div class="row">
+  <div class="column left" style="background-color:#aaa;">
+  <img src="Golf.jpg" height = 100% width = 100%>
+  </div>
+  <div class="column right" style="background-color:#bbb;">
+    <h2>Passion + Golfing  = Health Benefits?</h2>
+    <p>The National Golf Foundation reports that in the United States alone, over 42 million 
+      people golf annually and it has increased year of year. I love to golf. There I said it.  
+      Even though my wife doesn't like missing me on weekends to go golfing with the boys, 
+      I have several reasons in doing so. It's partly for work, socializing, and it's healthy!  
+      Golf is placed at a leisurely pace and allows me to take in the beautiful scenery, fresh air,
+      and talk with friends. There is also a lot of walking involved. Walking promotes heart health, improves cholesterol
+    while the golfing posture improves balance. There are many other health benefits such as increase of good moood, bone 
+    density and joint health. I would say personally, that the best benefit for me is that my wife realizes the same time things
+    and will begrudgently let me go golfing as much as I want to.</p>
+    <p>For more details on how golfing can help improve you health like it did mines, go visit 
+    <a href="https://www.health.com/benefits-of-golf-8662637"">The Health Benefits of Golf</a></p>
+  </div>
+  </div>
+    <p></p>
+    <div class="row" height = 100% width = 100%>
+  <div class="column left" style="background-color:#aaa;">
+  <img src="Cyber.jpeg" height = 100% width = 100%>
+  </div>
+  <div class="column right" style="background-color:#bbb;">
+    <h2>CyberAttacks: Are you at risk</h2>
+    <p>As mentioned in my biography, my major at KSU is in Information Security.  I've been in IT for about 30 years now and out of those,
+    I've been in InfoSec for about 16 years. I can't even begin to tell you how easy anyone can fall into scam traps by phishing emails.
+    This is one of the most common scams in the corporate World. Someon impersonating another co-worker and you innocently click on the link
+    and that's all it takes to open the door for a cyber crime. </p>
+    <p>So protect yourself by reading up on some news about what types of cyberattacks are heppending in real time. 
+      You can find more information by going to 
+    <a href="https://cybersecurityventures.com/intrusion-daily-cyber-threat-alert">CyberCrime Magazine</a>/</p>
+  </div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<div class="footer">
+  <h4>Notes: The purpose of this website is for the sole purpose of a school project only. Resources/references on how to create the materials
+  within this website are from wikipages, w3schools.com, class materials and various youtube videos. This website is copywrited OdamTong@2024. 
+  If you have any questions, please use the contact page to send me any suggestions.</h4>
+</div>
+</body>
+</html>
